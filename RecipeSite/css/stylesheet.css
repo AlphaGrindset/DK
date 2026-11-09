@@ -631,6 +631,14 @@ body {
 
 /* SEARCH HTML */
 
+.results_search_buttons_buttons {
+    color: var(--background-color-light);
+    background-color: #249c8e;
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .results h3 {
     color: var(--color-primary);
 }
@@ -644,23 +652,36 @@ body {
 }
 
 .results {
+    margin: 100px 0 0 0;
     width: var(--width-full);
     height: auto;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .results_box {
-    margin: 100px 0 0 0;
     width: var(--width-12col);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.results_box * {
-    padding: 10px 0;
+.results_box h3, .results_box h5 {
+    padding: 15px 0 0 0;
 }
+
+.results_box h5 {
+    font-weight: 400;
+}
+
+.results_box .category_title {
+    display: flex;
+    padding: 0 0 0 20px;
+    gap: 10px;
+}
+
+
 
 
 /* REPONSIVE RESPONSE RESPONI RESPONSIVE WEB DESIGN RWD */
