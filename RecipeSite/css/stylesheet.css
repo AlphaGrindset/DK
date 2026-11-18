@@ -120,6 +120,7 @@ body {
     height: 100%;
     position: relative;
     background-color: var(--background-color-dark-bg);
+    counter-reset: section;
 }
 
 .container {
@@ -735,8 +736,107 @@ body {
     gap: 10px;
 }
 
+/* RECIPE HTML */
+.recipedesc {
+    width: var(--width-full);
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+}
+
+.recipedesc_block {
+    display: flex;
+    width: var(--width-12col);
+    justify-content: center;
+}
+
+.recipedesc_left {
+    width: 600px;
+}
+
+.recipedesc_left_title p {
+    color: var(--color-primary);
+    padding-bottom: 10px;
+}
+
+.recipedesc_left_title h4 {
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--color-light);
+}
+
+.recipedesc_left_title h3 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--color-light);
+    padding-bottom: 10px;
+}
+
+.recipedesc_left_info {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.recipedesc_left_info_box {
+    color: var(--color-light);
+}
+
+.recipedesc_left_buttons_button {
+    margin-top: 10px;
+    padding: 10px 10px 10px 40px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid var(--color-light);
+    outline: none;
+    color: var(--background-color-light);
+}
+
+.recipedesc_icon {
+    color:var(--color-light);
+    left: 10px;
+    position: absolute;
+    font-size: 24px;
+    display: flex;
+    align-content: center;
+}
+
+.recipedesc_left_ingredients_i {
+    color: var(--color-light);
+}
+
+.recipe_icon {
+    color: var(--color-primary);
+}
+
+.recipe_image {
+    width: 600px;
+}
+
+.recipe_instructions {
+    width: var(--width-full);
+    display: flex;
+    justify-content: center;
+}
+
+.recipe_instructionsblock {
+    width: var(--width-12col);
+
+}
+
+.recipedesc_instructions_instruction {
+    color: var(--color-light);
+    margin-top: 20px;
+}
+
+.recipedesc_instructions_instruction::before { /* counts up so i dont have to manually */
+  counter-increment: section;
+  content: "" counter(section) ". ";
+}
 
 
+/* ABOUT ME SECTION */
 
 /* REPONSIVE RESPONSE RESPONI RESPONSIVE WEB DESIGN RWD */
 
